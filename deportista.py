@@ -10,6 +10,12 @@ class Deportista:
         return self.deporte
     def getAñosPracticando(self):
         return self.añosPracticando
+    def getEdad(self):
+        return self.edad
+    def getAltura(self):
+        return self.altura
+    def getSexo(self):
+        return self.sexo
 
     # setters
     def setDeporte(self, deporte):
@@ -18,3 +24,9 @@ class Deportista:
         self.añosPracticando = añosPracticando
     def setNombre(self, nombre):
         self.nombre = nombre
+    def setEdad(self, edad):
+        self.edad = edad
+    def setAltura(self, altura):
+        self.altura = altura
+    def setSexo(self, sexo):
+        self.sexo = sexo
