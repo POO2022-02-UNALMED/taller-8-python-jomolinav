@@ -3,15 +3,15 @@ from persona import Persona
 from deportista import Deportista
 
 class Futbolista(Persona, Deportista):
-    listaFutbolistas = []
+    
     def __init__(self, nombre, edad, altura, sexo, añosPracticando,  golesMarcados, tarjetasRojas, piernaHabil):
-        super().__init__(nombre, edad, altura, sexo, "Futbolista", añosPracticando)
+        super().__init__(nombre, edad, altura, sexo, añosPracticando)
         deporte = "Futbol"
         self.golesMarcados = golesMarcados
         self.tarjetasRojas = tarjetasRojas
         self.piernaHabil = piernaHabil
         self.__class__.listaFutbolistas.append(self)
-    
+    listaFutbolistas = []
     #getters
     def getGolesMarcados(self):
         return self.golesMarcados
