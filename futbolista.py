@@ -34,6 +34,6 @@ class Futbolista(Persona, Deportista):
 
     def __str__(self):
         cadena = ("Mi nombre es ", self.nombre,
-        "soy profesional en el deporte", deporte, "Tengo", años, "de edad y llevo",  añosPracticando, 
+        "soy profesional en el deporte", self.deporte, "Tengo", self.años, "de edad y llevo",  self.añosPracticando, 
         "años en el deporte")
         return cadena 
