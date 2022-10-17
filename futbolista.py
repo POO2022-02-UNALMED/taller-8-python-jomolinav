@@ -5,7 +5,7 @@ from deportista import Deportista
 class Futbolista(Persona, Deportista):
     
     def __init__(self, nombre, edad, altura, sexo, añosPracticando,  golesMarcados, tarjetasRojas, piernaHabil):
-        super().__init__(self, nombre, edad, altura, sexo, añosPracticando)
+        super().__init__( edad, altura, sexo, añosPracticando)
         deporte = "Futbol"
         self.golesMarcados = golesMarcados
         self.tarjetasRojas = tarjetasRojas
