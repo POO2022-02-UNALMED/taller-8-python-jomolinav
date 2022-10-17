@@ -29,6 +29,8 @@ class Futbolista(Persona, Deportista):
         self.tarjetasRojas = tarjetasRojas
     def setPiernaHabil(self, piernaHabil):
         self.piernaHabil = piernaHabil
+    def setNombre(self, nombre):
+        self.nombre = nombre
 
     def __str__(self):
         cadena = ("Mi nombre es ", nombre,
