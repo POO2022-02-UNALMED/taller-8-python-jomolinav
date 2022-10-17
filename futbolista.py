@@ -5,6 +5,7 @@ from deportista import Deportista
 class Futbolista(Persona, Deportista):
     listaFutbolistas = []
     def __init__(self, nombre, edad, altura, sexo, añosPracticando,  golesMarcados, tarjetasRojas, piernaHabil):
+        self.nombre =  nombre
         self.golesMarcados = golesMarcados
         self.tarjetasRojas = tarjetasRojas
         self.piernaHabil = piernaHabil
