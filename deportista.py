@@ -16,3 +16,5 @@ class Deportista:
         self.deporte = deporte
     def setAñosPracticando(self, añosPracticando):
         self.añosPracticando = añosPracticando
+    def setNombre(self, nombre):
+        self.nombre = nombre

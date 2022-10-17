@@ -5,8 +5,9 @@ from deportista import Deportista
 class Futbolista(Persona, Deportista):
     
     def __init__(self, nombre, edad, altura, sexo, añosPracticando,  golesMarcados, tarjetasRojas, piernaHabil):
-        super().__init__( edad, altura, sexo, añosPracticando)
+        super().__init__(edad, altura, sexo, añosPracticando)
         deporte = "Futbol"
+        self.nombre = nombre
         self.golesMarcados = golesMarcados
         self.tarjetasRojas = tarjetasRojas
         self.piernaHabil = piernaHabil
@@ -19,6 +20,8 @@ class Futbolista(Persona, Deportista):
         return self.tarjetasRojas
     def getPiernaHabil(self):
         return self.piernaHabil
+    def getNombre(self):
+        return self.nombre
     #setter
     def setGolesMarcados(self, golesMarcados):
         self.golesMarcados = golesMarcados
