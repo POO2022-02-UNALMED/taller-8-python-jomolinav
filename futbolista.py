@@ -8,6 +8,7 @@ class Futbolista(Persona, Deportista):
         super().__init__(edad, altura, sexo, añosPracticando)
         deporte = "Futbol"
         self.nombre = nombre
+        self.añosPracticando = añosPracticando
         self.golesMarcados = golesMarcados
         self.tarjetasRojas = tarjetasRojas
         self.piernaHabil = piernaHabil
